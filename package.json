@@ -1,0 +1,23 @@
+{
+  "name": "testframework_pc",
+  "version": "1.0.0",
+  "description": "Test framework based on the combination of protractor with cucumber.",
+  "main": "index.js",
+  "author": "MaryiaS",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "cucumber": "^2.3.1",
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^4.1.0",
+    "protractor": "^5.1.2",
+    "protractor-cucumber-framework": "^3.1.2"
+  },
+  "scripts": {
+    "test": "protractor test/protractor-conf.js",
+    "install": "node_modules\\.bin\\webdriver-manager update"
+  },
+  "devDependencies": {
+    "q": "^1.5.0"
+  }
+}
