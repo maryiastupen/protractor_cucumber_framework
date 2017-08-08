@@ -16,13 +16,6 @@ var BrowserUtils = function(world){
 		return true;
 	};
 
-	_this.writeScreenShot = function(data, filename) {
-		var fs = require("fs");
-	  var stream = fs.createWriteStream(filename);
-	  stream.write(new Buffer(data, 'base64'));
-	  stream.end();
-	};
-
     _this.returnToMainWindow = function(){
         return browser.getAllWindowHandles()
             .then(function(handles){
