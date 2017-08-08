@@ -24,7 +24,7 @@ var BrowserUtils = function(world){
                     return browser.switchTo().window(handles[0]);
                 }
             });
-    };
+    	};
 
 };
 
